@@ -97,7 +97,7 @@ const TransactionDetails = ({ params }: { params: { txHash: string } }) => {
                 className="w-full text-ellipsis overflow-hidden whitespace-nowrap"
               >
                 <span className="font-bold">Value:</span>{" "}
-                {formatWeiToEth(hexToDecimal(transactionData.value))}
+                {formatWeiToEth(hexToDecimal(transactionData.value).toString())}
               </Typography>
               <Typography
                 size="base"
