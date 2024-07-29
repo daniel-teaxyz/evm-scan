@@ -45,16 +45,16 @@ const AddressDetails = ({ params }: { params: { address: string } }) => {
             <Typography size="xl" weight="bold">
               Address details
             </Typography>
-            <div className="border border-2 rounded-md mb-2 p-4 border-gray-300 max-w-fit flex flex-col items-start justify-between gap-2">
+            <div className="border border-2 rounded-md mb-2 p-4 border-gray-300 w-full max-w-xl flex flex-col items-start justify-between gap-2">
               <Typography
                 size="base"
-                className="text-ellipsis overflow-hidden whitespace-nowrap"
+                className="text-ellipsis overflow-hidden whitespace-nowrap block w-full"
               >
                 <span className="font-bold">Address:</span> {address}
               </Typography>
               <Typography
                 size="base"
-                className="text-ellipsis overflow-hidden whitespace-nowrap"
+                className="text-ellipsis overflow-hidden whitespace-nowrap block w-full"
               >
                 <span className="font-bold">Balance:</span>{" "}
                 {formatWeiToEth(addressData.balance ?? "")}
