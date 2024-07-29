@@ -12,7 +12,7 @@ import { IoEnterOutline } from "react-icons/io5";
 const Header = () => {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState(
-    "0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97"
+    "0x9C92a78C578b8B54814bA8fD16dDbC086078001C"
   );
   const { network, handleNetworkChange } = useNetwork();
 
