@@ -11,7 +11,9 @@ import { IoEnterOutline } from "react-icons/io5";
 
 const Header = () => {
   const router = useRouter();
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(
+    "0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97"
+  );
   const { network, handleNetworkChange } = useNetwork();
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
